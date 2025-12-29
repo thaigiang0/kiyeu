@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thiệp Kỉ Yếu Cá Nhân</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="dark-toggle" onclick="toggleDark()">🌙</button>
+<button class="color-toggle" onclick="toggleColorPanel()">🎨</button>
+
+<div class="color-panel" id="colorPanel">
+  <button style="background:#1e3d59" onclick="setThemeColor('#1e3d59', '#eef2f3')"></button>
+  <button style="background:#b33939" onclick="setThemeColor('#b33939', '#fcefee')"></button>
+  <button style="background:#218c74" onclick="setThemeColor('#218c74', '#eef9f1')"></button>
+  <button style="background:#5f27cd" onclick="setThemeColor('#5f27cd', '#f3f0ff')"></button>
+</div>
+
+<div class="container">
+
+  <div class="top-title">THIỆP KỈ YẾU</div>
+
+  <header>
+    <span class="name">NÔNG THÁI GIANG</span>
+    <p>THPT Việt Yên số 1 • Lớp 12A7</p>
+  </header>
+
+  <main>
+    <p class="quote" id="quote"></p>
+
+    <div class="section">
+      <h3>📸 Thời gian & địa điểm chụp</h3>
+      <div class="box">
+        <p>📅 <b>11/01/2027</b></p>
+        <p>📍 <b>Sân trường THPT Việt Yên số 1</b></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>☎️ Thông tin liên lạc</h3>
+      <div class="box">
+        <p>📞 <a href="tel:0813943731">0813 943 731</a></p>
+        <p>🌐 <a href="https://facebook.com/thaigiang311208" target="_blank">facebook.com/thaigiang311208</a></p>
+      </div>
+    </div>
+
+    <a class="map-btn" href="https://maps.app.goo.gl/yFsZB8XqvyNCgLo18" target="_blank">
+      📍 Mở Google Maps
+    </a>
+  </main>
+
+  <footer>
+    Thanh xuân THPT • Niên khóa 2023 – 2026<br>
+    Một người – Một trang – Một thời để nhớ
+  </footer>
+
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>

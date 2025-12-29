@@ -1,0 +1,139 @@
+:root {
+  --bg: #eef2f3;
+  --header: #1e3d59;
+  --accent: #c9a227;
+  --box: #f4f1e8;
+}
+
+/* DARK MODE */
+body.dark {
+  --bg: #0f172a;
+  --header: #1e293b;
+  --accent: #facc15;
+  --box: #1f2937;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, var(--bg), #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.8s;
+}
+
+.container {
+  background: #fffefb;
+  width: 92%;
+  max-width: 440px;
+  border-radius: 22px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+  overflow: hidden;
+}
+
+/* BUTTONS */
+.dark-toggle,
+.color-toggle {
+  position: fixed;
+  left: 14px;
+  z-index: 999;
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+
+.dark-toggle { top: 14px; }
+.color-toggle { top: 60px; }
+
+/* COLOR PANEL */
+.color-panel {
+  position: fixed;
+  top: 110px;
+  left: 14px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(0,0,0,0.55);
+  padding: 10px;
+  border-radius: 14px;
+}
+
+.color-panel.show { display: flex; }
+
+.color-panel button {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.6);
+  cursor: pointer;
+}
+
+/* CONTENT */
+.top-title {
+  background: var(--header);
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  letter-spacing: 5px;
+}
+
+header {
+  text-align: center;
+  padding: 22px 20px 1px;
+}
+
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: var(--header);
+}
+
+main {
+  padding: 22px;
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  transition: opacity 0.5s;
+}
+
+
+.section h3 {
+  color: var(--header);
+  border-left: 4px solid var(--accent);
+  padding-left: 8px;
+}
+
+.box {
+  background: var(--box);
+  padding: 12px;
+  border-radius: 14px;
+}
+
+.map-btn {
+  display: block;
+  margin: 16px auto;
+  background: var(--header);
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 12px;
+  border-top: 1px dashed #ccc;
+}
